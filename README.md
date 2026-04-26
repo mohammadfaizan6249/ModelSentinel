@@ -45,21 +45,18 @@ This makes the project feel like a real production ML system instead of just a m
 | `Retraining Workflow` | Recovery path from degraded `CreditRisk_v2.1` to improved `CreditRisk_v2.2` |
 
 ### What happens end to end
+## Poster
 
-```mermaid
-flowchart LR
-    A["Baseline Data<br/>Reference credit-risk population"] --> B["Train Model<br/>CreditRisk_v2.1"]
-    B --> C["Deploy to Production"]
-    C --> D["Generate Production Batches"]
-    D --> E["Compute Drift<br/>PSI + KS"]
-    E --> F["Detect Alerts<br/>stable / warning / critical"]
-    F --> G["Measure Model Health<br/>baseline vs current accuracy"]
-    G --> H["Analyze Impact<br/>root cause + operator insights"]
-    H --> I["Trigger Retraining"]
-    I --> J["Train + Validate<br/>3-fold CV + holdout metrics"]
-    J --> K["Register Artifact<br/>CreditRisk_v2.2"]
-    K --> L["Redeploy + Verify Recovery"]
-```
+<p align="center">
+  <a href="./sentinel_project.pdf">
+    <img src="./docs/assets/modelsentinel-poster.png" alt="ModelSentinel Poster" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Click the poster image to open the full PDF version.</strong><br>
+  <a href="./sentinel_project.pdf">Download Poster PDF</a>
+</p>
 
 ## Demo Snapshot
 
