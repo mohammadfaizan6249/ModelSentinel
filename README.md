@@ -179,6 +179,16 @@ make test
 - [deployment.md](/Users/faizan/Desktop/projects/modelsentinel/docs/deployment.md)
 - [demo-script.md](/Users/faizan/Desktop/projects/modelsentinel/docs/demo-script.md)
 
+## Live Demo
+
+<p align="center">
+  <img src="./modelsentinel-demo.gif" alt="ModelSentinel Dashboard Demo" width="100%">
+</p>
+
+<p align="center">
+  A short product demo showing live drift monitoring, feature inspection, and the end-to-end dashboard workflow.
+</p>
+
 ## Resume Positioning
 
 - Built an end-to-end ML monitoring platform that computes production drift with PSI and KS across six deployed credit-risk features.
