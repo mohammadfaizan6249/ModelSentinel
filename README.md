@@ -48,14 +48,11 @@ This makes the project feel like a real production ML system instead of just a m
 ## Poster
 
 <p align="center">
-  <a href="./sentinel_project.pdf">
-    <img src="./docs/assets/modelsentinel-poster.png" alt="ModelSentinel Poster" width="100%">
-  </a>
+  <img src="./docs/assets/sentinel_project.jpg" alt="ModelSentinel Poster" width="100%">
 </p>
 
 <p align="center">
-  <strong>Click the poster image to open the full PDF version.</strong><br>
-  <a href="./sentinel_project.pdf">Download Poster PDF</a>
+  <a href="./sentinel_project.pdf">Open PDF version</a>
 </p>
 
 ## Demo Snapshot
