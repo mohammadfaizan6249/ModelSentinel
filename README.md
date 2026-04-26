@@ -48,7 +48,7 @@ This makes the project feel like a real production ML system instead of just a m
 ## Poster
 
 <p align="center">
-  <img src="./docs/assets/sentinel_project.jpg" alt="ModelSentinel Poster" width="100%">
+  <img src="./sentinel_project.jpg" alt="ModelSentinel Poster" width="100%">
 </p>
 
 <p align="center">
