@@ -1,0 +1,22 @@
+[
+  {
+    "version": "CreditRisk_v2.2",
+    "trained_at": "2026-04-26T02:58:07.776943+00:00",
+    "train_size": 5200,
+    "validation_size": 1300,
+    "cv_accuracy": 0.7527,
+    "validation_accuracy": 0.7769,
+    "validation_log_loss": 0.4797,
+    "artifact_path": "/Users/faizan/Desktop/projects/modelsentinel/ml/models/CreditRisk_v2.2.json"
+  },
+  {
+    "version": "CreditRisk_v2.1",
+    "trained_at": "2026-04-26T03:02:21.992691+00:00",
+    "train_size": 1920,
+    "validation_size": 480,
+    "cv_accuracy": 0.8667,
+    "validation_accuracy": 0.85,
+    "validation_log_loss": 0.3383,
+    "artifact_path": "/Users/faizan/Desktop/projects/modelsentinel/ml/models/CreditRisk_v2.1.json"
+  }
+]

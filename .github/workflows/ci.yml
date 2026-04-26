@@ -1,0 +1,40 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Create virtual environment
+        run: python -m venv .venv
+
+      - name: Install backend dependencies
+        run: ./.venv/bin/pip install ./services/api
+
+      - name: Run backend tests
+        run: PYTHONPATH="$PWD:$PWD/services/api" ./.venv/bin/python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Run frontend lint
+        run: npm --workspace apps/web run lint
+
+      - name: Run frontend build
+        run: npm run build:web
